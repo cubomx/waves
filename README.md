@@ -8,7 +8,7 @@ The tools implemented are:
 
 Before you do anything, you should go and do the [Environment setup](https://reactnative.dev/docs/environment-setup)
 
-In the root directory, you can run the two different environments (Android & iOS), wit the next steps:
+In the root directory, you can run the two different environments (Android & iOS), with the next steps:
 
 For initialize the React Native App:
 ### `npx react-native start`
