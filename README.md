@@ -17,6 +17,6 @@ If you want to compile and run the Android app:
 ### `npx react-native run-android`
 
 If you want to compile and run the iOS app (if you have a Mac computer):
-### `npx react-native run-android`
+### `npx react-native run-ios`
 
 This project (by February 22th) is still in progress :)
