@@ -6,14 +6,15 @@
  * @flow strict-local
  */
 
-import { NavigationContainer } from '@react-navigation/native';
+
 import React from 'react';
-import Login from 'waves/src/screens/Login';
+import { NavigationContainer } from '@react-navigation/native';
+import Navigate from 'waves/src/screens/Navigate';
 
 const App = () => {
   return (
     <NavigationContainer> 
-      <Login />
+      <Navigate />
     </NavigationContainer>
   );
 };

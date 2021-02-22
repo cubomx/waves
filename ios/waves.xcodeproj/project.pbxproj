@@ -32,6 +32,13 @@
 		C421089C8D9740449BB55DA0 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16523337CD974F708EC0B959 /* Octicons.ttf */; };
 		44837F1794474C75B46B5251 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9CCCAFA129E4469A33602D3 /* SimpleLineIcons.ttf */; };
 		68D396167382494DB32166BB /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 947B94CFD54D4C15A609A51E /* Zocial.ttf */; };
+		79A4D9E524544341A5C18AE8 /* MavenPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD813EC77C124E1287AF87FD /* MavenPro-Black.ttf */; };
+		F55FB4E1F52340B59753EF54 /* MavenPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1026249F61ED4F47B1021155 /* MavenPro-Bold.ttf */; };
+		EE63A58D3F2C49FF9DF7CF74 /* MavenPro-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90AB08DF360D4FE0904757E5 /* MavenPro-ExtraBold.ttf */; };
+		352877BDD8BB4D4680FB5D43 /* MavenPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDAF13CED77A4B39811D5C4E /* MavenPro-Medium.ttf */; };
+		1F4D552AD202415A9FC2551D /* MavenPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 386685832BEA4B5D9F61766B /* MavenPro-Regular.ttf */; };
+		C376F4D07AB1499FB4C7D00C /* MavenPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C503AD68480A4B57BB6BE62E /* MavenPro-SemiBold.ttf */; };
+		34B45110627747F8B3DD0B0C /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E4AF5D798B9430E942A9FFE /* Pacifico-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +90,13 @@
 		16523337CD974F708EC0B959 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		C9CCCAFA129E4469A33602D3 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		947B94CFD54D4C15A609A51E /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AD813EC77C124E1287AF87FD /* MavenPro-Black.ttf */ = {isa = PBXFileReference; name = "MavenPro-Black.ttf"; path = "../assets/fonts/MavenPro-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1026249F61ED4F47B1021155 /* MavenPro-Bold.ttf */ = {isa = PBXFileReference; name = "MavenPro-Bold.ttf"; path = "../assets/fonts/MavenPro-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		90AB08DF360D4FE0904757E5 /* MavenPro-ExtraBold.ttf */ = {isa = PBXFileReference; name = "MavenPro-ExtraBold.ttf"; path = "../assets/fonts/MavenPro-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FDAF13CED77A4B39811D5C4E /* MavenPro-Medium.ttf */ = {isa = PBXFileReference; name = "MavenPro-Medium.ttf"; path = "../assets/fonts/MavenPro-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		386685832BEA4B5D9F61766B /* MavenPro-Regular.ttf */ = {isa = PBXFileReference; name = "MavenPro-Regular.ttf"; path = "../assets/fonts/MavenPro-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C503AD68480A4B57BB6BE62E /* MavenPro-SemiBold.ttf */ = {isa = PBXFileReference; name = "MavenPro-SemiBold.ttf"; path = "../assets/fonts/MavenPro-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1E4AF5D798B9430E942A9FFE /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; name = "Pacifico-Regular.ttf"; path = "../assets/fonts/Pacifico-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +223,13 @@
 				16523337CD974F708EC0B959 /* Octicons.ttf */,
 				C9CCCAFA129E4469A33602D3 /* SimpleLineIcons.ttf */,
 				947B94CFD54D4C15A609A51E /* Zocial.ttf */,
+				AD813EC77C124E1287AF87FD /* MavenPro-Black.ttf */,
+				1026249F61ED4F47B1021155 /* MavenPro-Bold.ttf */,
+				90AB08DF360D4FE0904757E5 /* MavenPro-ExtraBold.ttf */,
+				FDAF13CED77A4B39811D5C4E /* MavenPro-Medium.ttf */,
+				386685832BEA4B5D9F61766B /* MavenPro-Regular.ttf */,
+				C503AD68480A4B57BB6BE62E /* MavenPro-SemiBold.ttf */,
+				1E4AF5D798B9430E942A9FFE /* Pacifico-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -368,6 +389,13 @@
 				C421089C8D9740449BB55DA0 /* Octicons.ttf in Resources */,
 				44837F1794474C75B46B5251 /* SimpleLineIcons.ttf in Resources */,
 				68D396167382494DB32166BB /* Zocial.ttf in Resources */,
+				79A4D9E524544341A5C18AE8 /* MavenPro-Black.ttf in Resources */,
+				F55FB4E1F52340B59753EF54 /* MavenPro-Bold.ttf in Resources */,
+				EE63A58D3F2C49FF9DF7CF74 /* MavenPro-ExtraBold.ttf in Resources */,
+				352877BDD8BB4D4680FB5D43 /* MavenPro-Medium.ttf in Resources */,
+				1F4D552AD202415A9FC2551D /* MavenPro-Regular.ttf in Resources */,
+				C376F4D07AB1499FB4C7D00C /* MavenPro-SemiBold.ttf in Resources */,
+				34B45110627747F8B3DD0B0C /* Pacifico-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
