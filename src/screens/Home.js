@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import {Text, View} from 'react-native';
+import {Header} from 'react-native-elements';
+import styles from '../styles/TextStyle.js';
+import Title from '../components/Title';
 
 
 class Home extends Component{
     render(){
         return (
-            <View style={{justifyContent:'center', alignSelf:'center'}}>
-                <Text style={{fontFamily: 'FontAwesome5_Solid', fontSize:36}}>Home</Text>
+            <View>
             </View>
         );
     }
