@@ -10,5 +10,9 @@ export default StyleSheet.create({
     }, 
     btnRight:{
         marginRight: 5
-    }
+    },
+    screenTxt:{
+        fontFamily: 'MavenPro-Bold',
+        fontSize: 20,
+    },
 });

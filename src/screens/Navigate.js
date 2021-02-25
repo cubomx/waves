@@ -1,12 +1,16 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import { Button } from 'react-native-elements';
-import {ButtonNavigate} from '../components/ButtonNavigate';
-import Icon from 'react-native-vector-icons/FontAwesome';
+
+
 import Home from './Home';
 import Login from './Login';
 import Loading from './Loading';
+import SignUp from './SignUp';
+import Menu from './Menu';
+
+import {ButtonNavigate} from '../components/ButtonsNavigate';
 import styles from '../styles/TextStyle';
+
 
 const Stack = createStackNavigator();
 
@@ -19,6 +23,22 @@ const Navigate = () => {
             headerShown: false
           }}>
 
+        <Stack.Screen 
+            name="Menu"
+            options={{
+                headerShown: true,
+                headerLeftContainerStyle: styles.btnLeft,
+                headerTitleStyle: styles.screenTxt,
+                headerLeft: () => (<ButtonNavigate name='chevron-circle-left' size={30}/>)
+            }}
+            component={Menu}
+        />
+
+        <Stack.Screen 
+            name='signup'
+            component={SignUp}
+        />
+
         <Stack.Screen
             name="waves"
             options={{
@@ -26,8 +46,8 @@ const Navigate = () => {
             headerTitleStyle: styles.waves,
             headerLeftContainerStyle: styles.btnLeft,
             headerRightContainerStyle: styles.btnRight,
-            headerRight: () => (<ButtonNavigate name='info'/>),
-            headerLeft: () => ( <ButtonNavigate name='bars' />),
+            headerRight: () => (<ButtonNavigate name='info' size={26}/>),
+            headerLeft: () => ( <ButtonNavigate name='bars' size={26} />),
             }}
             component={Home} 
         />

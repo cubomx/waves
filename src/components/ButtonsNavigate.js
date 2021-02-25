@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
+
 const ButtonNavigate = (props) => {
     
     return (
@@ -10,12 +11,11 @@ const ButtonNavigate = (props) => {
             type='outline'
             onPress={action = () => alert('This is a button!')}
             icon={
-                <Icon name ={props.name} size={15} color="gray" />
+                <Icon name ={props.name} size={props.size} color="gray" />
             }
     />
     );
 }
-
 
 export  {ButtonNavigate};
 
