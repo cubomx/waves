@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import { View, Text, TextInput, StyleSheet, Image } from 'react-native';
-import { material } from 'react-native-typography'
+import { useNavigation } from '@react-navigation/native';
 import { SocialIcon, Button   } from 'react-native-elements'
 import Logo from '../images/logo.png';
 
-class Login extends Component {
-    render(){
+const Login = () => {
+    
+        const navigation = useNavigation();
+        const goHome = () => navigation.navigate('waves');
         return (
+            
             // Try setting `flexDirection` to `column`.
             <View style={styles.container}>
                 <View>
@@ -24,7 +27,7 @@ class Login extends Component {
               </View>
       
               <View style={{alignItems:'flex-end',  width: 300}}>
-                  <Button title="Sign In" type='outline' containerViewStyle={{marginBottom: 30}}/>
+                  <Button title="Sign In" type='outline' containerViewStyle={{marginBottom: 30}} onPress={goHome}/>
               </View>
       
               <View style={{flexDirection:'column', alignItems:'center'}}>
@@ -46,7 +49,6 @@ class Login extends Component {
               
             </View>
           );
-    }
     
 };
 

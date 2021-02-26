@@ -14,5 +14,7 @@ export default StyleSheet.create({
     screenTxt:{
         fontFamily: 'MavenPro-Bold',
         fontSize: 20,
+        alignSelf: 'center',
+        marginRight: 40
     },
 });

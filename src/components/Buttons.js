@@ -15,7 +15,7 @@ const ButtonGen = (props) => {
                 {width: props.width},
                 ]
             }
-            onPress={() => Alert.alert('Button Pressed!')}>
+            onPress={props.func}>
             <Text style={[styles.txt, {color: props.txtColor, fontFamily:props.font, fontSize: props.txtSize}]}> {props.title} </Text>
         </Pressable> 
         
