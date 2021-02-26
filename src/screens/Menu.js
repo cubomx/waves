@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import {ButtonIcon, ButtonGen} from '../components/Buttons';
 
@@ -9,6 +10,9 @@ import Reward from '../images/icons/reward.png';
 import Stats from '../images/icons/stats.png';
 
 export default Menu = () => {
+    const navigation = useNavigation();
+    const goOut = () => navigation.navigate('Login');
+
     return (
         <View style={styles.container}>
             <View style={styles.subContainer}>
@@ -18,7 +22,7 @@ export default Menu = () => {
                 <ButtonIcon txColor='black' icon={Stats} txt='Stats'/>
             </View>
             <View style={styles.bottom}>
-                <ButtonGen title="Log out" color="#cc0000ff" txtColor="white" txtSize={30} font="MavenPro-Bold" width={200}/>
+                <ButtonGen title="Log out" color="#cc0000ff" txtColor="white" txtSize={30} font="MavenPro-Bold" width={200} func={goOut}/>
             </View>
         </View>
         
