@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from '../styles/TextStyle.js';
 import {Text, View} from 'react-native';
 
 const Title = () => {
