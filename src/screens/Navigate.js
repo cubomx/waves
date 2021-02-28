@@ -17,8 +17,8 @@ const Stack = createStackNavigator();
 
 
 const Navigate = () => {
-    handlePress = () => {
-        Alert.alert('Button Pressed!');
+    const handlePress = () => {
+        alert('Button Pressed!');
     }
 
 
@@ -51,7 +51,7 @@ const Navigate = () => {
             headerTitleStyle: styles.waves,
             headerLeftContainerStyle: styles.btnLeft,
             headerRightContainerStyle: styles.btnRight,
-            headerRight: () => (<SButton name='info' size={26} func={this.handlePress}/>),
+            headerRight: () => (<SButton name='info' size={26} func={handlePress}/>),
             headerLeft: () => ( <ButtonNavigate name='bars' size={26} place="Menu"  />),
             }}
             component={Home} 

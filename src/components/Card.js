@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, StyleSheet, Text, Pressable} from 'react-native';
 
-export default Card = (props) => {
+const Card = (props) => {
     return(
         
             <Pressable>
@@ -34,3 +34,5 @@ const styles = StyleSheet.create({
         color: 'white',
     },
 })
+
+export {Card};

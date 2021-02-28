@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Text, View, FlatList, SafeAreaView} from 'react-native';
-import Card from '../components/Card';
+import {Card} from '../components/Card';
 
 const DATA = [
     {id:'1', title:'Letras', color:'#ff9601', status:'Completado'},
@@ -12,9 +12,9 @@ const DATA = [
 ]
 
 
-export default Home = () => {
+const Home = () => {
 
-    renderItem = ({item}) => (
+    const renderItem = ({item}) => (
         <Card title={item.title} color={item.color} status={item.status}/>
     )
 
@@ -28,4 +28,6 @@ export default Home = () => {
     );
     
 }
+
+export default Home;
 

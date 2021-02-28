@@ -5,8 +5,10 @@ import { useNavigation } from '@react-navigation/native';
 import {ButtonGen} from '../components/Buttons';
 import Logo from '../images/logo.png';
 
-export default SignUp = () => {
-    alert_ =  () => Alert.alert('Button Pressed!');
+const SignUp = () => {
+    const alertame =  () => {
+        alert('Button Pressed!')
+    };
     const navigation = useNavigation();
     const goToLogin = () => navigation.navigate('Login');
     return (
@@ -18,10 +20,10 @@ export default SignUp = () => {
                 font='MavenPro-Bold'
                 width={300} 
                 txtSize={20}
-                func={this.alert_}/>
-            <ButtonGen title="Sign Up with Google" color="red" txtColor="white" font='MavenPro-Bold' width={300} txtSize={20} func={this.alert_}/>
+                func={alertame}/>
+            <ButtonGen title="Sign Up with Google" color="red" txtColor="white" font='MavenPro-Bold' width={300} txtSize={20} func={alertame}/>
             <Text style={{fontFamily: 'MavenPro-Medium', fontSize: 30}}>or</Text>
-            <ButtonGen title="Sign Up with Email" color="green" txtColor="white" font='MavenPro-Bold' width={300} txtSize={20} func={this.alert_}/>
+            <ButtonGen title="Sign Up with Email" color="green" txtColor="white" font='MavenPro-Bold' width={300} txtSize={20} func={alertame}/>
             <ButtonGen title="I already have an account" color="rgba(255, 0, 255, 0.0)" txtColor="#4285f4" font='MavenPro-Regular' width={300} txtSize={20} func={goToLogin}/>
         </View>
     );
@@ -37,3 +39,5 @@ const styles = StyleSheet.create({
         alignItems:'center',
     },
 })
+
+export default SignUp;

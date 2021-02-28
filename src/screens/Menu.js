@@ -9,7 +9,7 @@ import Settings from '../images/icons/settings.png';
 import Reward from '../images/icons/reward.png';
 import Stats from '../images/icons/stats.png';
 
-export default Menu = () => {
+const Menu = () => {
     const navigation = useNavigation();
     const goOut = () => navigation.navigate('Login');
 
@@ -49,3 +49,5 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
 })
+
+export default Menu;
