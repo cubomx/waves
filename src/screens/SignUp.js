@@ -5,6 +5,8 @@ import { useNavigation } from '@react-navigation/native';
 import {ButtonGen} from '../components/Buttons';
 import Logo from '../images/logo.png';
 
+import {verticalScale} from '../helpers/Scaling';
+
 const SignUp = () => {
     const alertame =  () => {
         alert('Button Pressed!')
@@ -13,7 +15,7 @@ const SignUp = () => {
     const goToLogin = () => navigation.navigate('Login');
     return (
         <View style={styles.container}>
-            <Image source={Logo} style={{width: 300, height: 150, resizeMode: 'stretch'}}/>
+            <Image source={Logo} style={{width: verticalScale(300), height:verticalScale(150), resizeMode: 'stretch'}}/>
             <ButtonGen title="Sign Up with Facebook" 
                 color='blue' 
                 txtColor="white" 
@@ -37,6 +39,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column', 
         justifyContent:'space-evenly', 
         alignItems:'center',
+        paddingVertical: 40,
     },
 })
 

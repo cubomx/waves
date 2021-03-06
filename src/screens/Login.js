@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { View, Text, TextInput, StyleSheet, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { SocialIcon, Button   } from 'react-native-elements'
+import { SocialIcon, Button   } from 'react-native-elements';
+
+import {verticalScale} from '../helpers/Scaling';
+
 import Logo from '../images/logo.png';
 
 const Login = () => {
@@ -13,7 +16,7 @@ const Login = () => {
             // Try setting `flexDirection` to `column`.
             <View style={styles.container}>
                 <View>
-                    <Image source={Logo} style={{width: 300, height: 150, resizeMode: 'stretch'}}/>
+                    <Image source={Logo} style={{width: verticalScale(300), height:verticalScale(150), resizeMode: 'stretch'}}/>
                 </View>
                 
               <View style={{alignItems:'flex-end',  width: 300}}> 
@@ -37,16 +40,12 @@ const Login = () => {
                       <Text style={styles.label}> or </Text>
                   <View style={styles.divider}></View>
                   </View>
-                  
+
                   <View style={{flexDirection:'row'}}>
                       <SocialIcon type='facebook' style={{marginRight:80}}/>
                       <SocialIcon type='google' />
                   </View>
-      
               </View>
-              
-              
-              
             </View>
           );
     
@@ -59,8 +58,7 @@ const styles = StyleSheet.create({
         justifyContent:'space-between', 
         alignItems:'center',
         backgroundColor: 'rgba(0, 175, 145, 0.2)',
-        paddingTop: 20,
-        paddingBottom: 20
+        paddingVertical: 40,
     },
     text: {
         borderWidth: 2, 

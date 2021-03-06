@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, Text, Pressable} from 'react-native';
+import {moderateScale} from '../helpers/Scaling';
 
 const Card = (props) => {
     return(
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
     box:{
         flexDirection: 'column',
         height: 'auto',
-        width: 300,
+        width: moderateScale(280, 0.5),
         alignSelf: 'center',
         borderRadius: 10,
         marginVertical: 15,

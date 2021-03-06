@@ -9,7 +9,7 @@ export default StyleSheet.create({
         marginLeft: 5
     }, 
     btnRight:{
-        marginRight: 5
+        marginRight: 5,
     },
     screenTxt:{
         fontFamily: 'MavenPro-Bold',
