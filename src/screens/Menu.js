@@ -4,6 +4,8 @@ import { useNavigation } from '@react-navigation/native';
 
 import {ButtonIcon, ButtonGen} from '../components/Buttons';
 
+import {verticalScale} from '../helpers/Scaling';
+
 import Profile from '../images/icons/profile.png';
 import Settings from '../images/icons/settings.png';
 import Reward from '../images/icons/reward.png';
@@ -16,10 +18,10 @@ const Menu = () => {
     return (
         <View style={styles.container}>
             <View style={styles.subContainer}>
-                <ButtonIcon txColor='black' icon={Profile} txt='Profile'/>
-                <ButtonIcon txColor='black' icon={Settings} txt='Settings'/>
-                <ButtonIcon txColor='black' icon={Reward} txt='Reward'/>
-                <ButtonIcon txColor='black' icon={Stats} txt='Stats'/>
+                <ButtonIcon style={styles.option}  txColor='black' icon={Profile} txt='Profile'/>
+                <ButtonIcon style={styles.option}  txColor='black' icon={Settings} txt='Settings'/>
+                <ButtonIcon style={styles.option}  txColor='black' icon={Reward} txt='Reward'/>
+                <ButtonIcon style={styles.option}  txColor='black' icon={Stats} txt='Stats'/>
             </View>
             <View style={styles.bottom}>
                 <ButtonGen title="Log out" color="#cc0000ff" txtColor="white" txtSize={30} font="MavenPro-Bold" width={200} func={goOut}/>
@@ -34,19 +36,20 @@ const styles = StyleSheet.create({
         backgroundColor:'white', 
         flex: 1,
         flexDirection: 'column', 
-        justifyContent:'space-between', 
-        paddingTop: 40
+        justifyContent:'space-around', 
+        paddingVertical: verticalScale(30),
     },
     subContainer:{
-        flex: 6,
         alignItems:'flex-start',
         flexDirection: 'column',
         justifyContent: 'space-around',
-        paddingBottom: 50
+        paddingBottom: verticalScale(20),
     },
     bottom:{
-        flex: 3,
         alignItems: 'center',
+    },
+    option:{
+        marginBottom: verticalScale(2),
     },
 })
 

@@ -24,7 +24,7 @@ const ButtonGen = (props) => {
 
 const ButtonIcon = (props) =>{
     return(
-        <Pressable >
+        <Pressable style={props.style}>
             <View style={styles.subContainer}>
                 <Image source={props.icon} style={[styles.img, {marginRight: 30}]} />
                 <Text style={[styles.txt, styles.txtMenu, {color: 'black'}]} >{props.txt}</Text>
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     subContainer:{
         flexDirection: 'row',
         alignItems: 'center',
-        marginLeft: 30
+        marginLeft: 30,
     },
     img:{
         width: 80, 
